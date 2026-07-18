@@ -10,18 +10,11 @@ TODO: one-line description of this project.
 
 This repo is a [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template): clicking **Use this template** copies these files as-is into a new repo, there is no variable substitution. After generating a new repo from it, go through this checklist:
 
-- [ ] Replace `project-name` everywhere (badges above, `package.json` `name`/`repository`/`homepage`/`bugs`, this
-      heading) with the real repo name.
+- [ ] Replace `project-name` everywhere (badges above, `package.json` `name`/`repository`/`homepage`/`bugs`, this heading) with the real repo name.
 - [ ] Fill in `package.json` `description` and this README's one-line description.
 - [ ] Set `package.json` `version` to wherever this project's versioning actually starts.
 - [ ] Drop `package.json` `private: true` only if this project will actually be published somewhere.
-- [ ] Configure branch protection (or a ruleset) on `main`: require pull requests, require the `Continuous
-      Integration` status check from `pull-request.yml`, and set the merge method to **merge commits only** (disable
-      squash and rebase merging in Settings → General → Pull Requests). The `commitlint` step in `pull-request.yml`
-      is a CI backstop for the local Husky hook, not redundant with it, and it only stays meaningful if commits land
-      in `main`'s history unmodified; squash/rebase merging defeats that. See
-      [dnd-mapp/tsconfig's ADR 0001](https://github.com/dnd-mapp/tsconfig/blob/main/docs/adr/0001-commit-message-enforcement.md)
-      for the full reasoning. This has to be set per repo, GitHub org-wide rulesets require GitHub Enterprise.
+- [ ] Configure branch protection (or a ruleset) on `main`: require pull requests, require the `Continuous Integration` status check from `pull-request.yml`, and set the merge method to **merge commits only** (disable squash and rebase merging in Settings → General → Pull Requests). The `commitlint` step in `pull-request.yml` is a CI backstop for the local Husky hook, not redundant with it, and it only stays meaningful if commits land in `main`'s history unmodified; squash/rebase merging defeats that. See [dnd-mapp/tsconfig's ADR 0001](https://github.com/dnd-mapp/tsconfig/blob/main/docs/adr/0001-commit-message-enforcement.md) for the full reasoning. This has to be set per repo, GitHub org-wide rulesets require GitHub Enterprise.
 - [ ] Delete this "Using this template" section once the checklist is done.
 
 Depending on what this repo is actually for, add:
