@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "version": "0.0.0",
-  "description": "",
+  "description": "Template repository for bootstrapping new dnd-mapp repositories",
   "license": "MIT",
   "type": "module",
   "scripts": {
