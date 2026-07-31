@@ -2,6 +2,10 @@
 
 Template repository for bootstrapping new `dnd-mapp` repositories, with shared tooling and CI pre-configured.
 
+## Prerequisites
+
+- [mise](https://mise.jdx.dev/) (recommended): manages the Node.js and pnpm versions this repo pins in `package.json`'s `devEngines` field. Run `mise install` after installing it to pick up matching versions automatically.
+
 ## Installation
 
 Click **Use this template** on GitHub to create a new repository from this one. In the new repository, install dependencies and set up the Husky git hooks:
@@ -11,6 +15,21 @@ pnpm install
 ```
 
 Then update `package.json`'s `name` and `description`, and this README, to match the new repository.
+
+## Editor setup
+
+Configure your editor to run Prettier on save, so files match this repo's `.prettierrc.json` without needing `pnpm format` before every commit.
+
+- **VS Code**: install the recommended [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) (VS Code prompts for it automatically via `.vscode/extensions.json`), then add to your `settings.json`:
+
+  ```json
+  {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+  }
+  ```
+
+- **WebStorm**: open Settings → Languages & Frameworks → JavaScript → Prettier, and check **Run on save**. WebStorm auto-detects the local `prettier` package and this repo's config.
 
 ## Usage
 
