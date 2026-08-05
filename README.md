@@ -1,4 +1,4 @@
-# dnd-mapp/project-template
+# dnd-mapp/template-project
 
 Template repository for bootstrapping new `dnd-mapp` repositories, with shared tooling and CI pre-configured.
 
